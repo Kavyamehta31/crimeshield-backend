@@ -23,11 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5((9b5%)l9f(z$!#+y)t_-j*oq5=s*-#(7vu-me&p$-s1en(xv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = [
+    "crimeshield-backend.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
 # Application definition
 
 INSTALLED_APPS = [
