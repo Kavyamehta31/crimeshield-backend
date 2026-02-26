@@ -1,0 +1,1 @@
+web: gunicorn crimeshield_backend.wsgi
