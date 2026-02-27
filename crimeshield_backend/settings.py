@@ -138,13 +138,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import django
-django.setup()
-
-from django.contrib.auth.models import User
-
-if not User.objects.filter(username="Vishal").exists():
-    User.objects.create_user(
-        username="Vishal",
-        password="1234"
-    )
